@@ -1,0 +1,150 @@
+body {
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */          /* Full tinggi layar */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px black solid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;    
+  align-items: center;    
+}
+
+nav button{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.section .active {
+  display: block;
+}
+
+button:hover {
+  color: rgb(77, 77, 255);
+}
+
+#home {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2%;
+    height: auto;
+    width: 20%;
+    overflow: hidden;
+  }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-about {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  width: 90%;
+  max-width: 400px;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#project {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px black solid;
+  padding: 10px;
+  width: 100vh;
+
+}
+
+.project p {
+  border: 1px black solid;
+  text-align: left;
+}
+
+#contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  gap: 10px;
+}
+
+form {
+  border: 1px black solid;
+  padding: 50px;
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+
+@media (max-width: 600px) {
+  .card {
+    height: auto;
+    width: 80%;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  nav button {
+    font-size: 10px;
+  }
+
+  .project-card {
+    width: 50vh;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  form {
+    width: 30vh;
+  }
+
+}
