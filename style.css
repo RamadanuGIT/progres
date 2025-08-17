@@ -3,30 +3,35 @@ body {
     align-items: center;     /* Vertical center */          /* Full tinggi layar */
     margin: 0;
     padding: 0;
+    background-color: #1e2328;
+    color: white;
 }
 
-header {
-    display: flex;
-    background-color: white;
-    justify-content: space-around;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    border-bottom: 1px black solid;
-}
 
-nav {
+.navbar {
+  position: sticky;
+  top: 0;
   display: flex;
-  justify-content: space-around;    
-  align-items: center;    
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ff4655;
+  padding: 10px;
 }
 
-nav button{
-    background-color: white;
-    border: none;
-    font-weight: bold;
-    font-size: 25px;
-    cursor: pointer;
+.navbar a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+.navbar button {
+  justify-content: left;
 }
 
 .section .active {
@@ -55,9 +60,10 @@ button:hover {
     overflow: hidden;
   }
 
-a {
+#home a {
+  background-color: white;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 #about {
@@ -91,35 +97,49 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px black solid;
+  border: 1px white solid;
   padding: 10px;
   width: 100vh;
 
 }
 
 .project p {
-  border: 1px black solid;
+  border: 1px white solid;
   text-align: left;
 }
 
 #contact {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  font-size: larger;
-  gap: 10px;
+  text-align: center;
+  height: 100vh;
 }
 
-form {
-  border: 1px black solid;
+.contact-form {
+  
+  border: 1px white solid;
+  border-radius: 5px;
   padding: 50px;
-  width: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #ff4655;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 
