@@ -13,10 +13,10 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#projects">Projects</a>
+            <a href="#project">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <button onClick="changeTheme" id="theme">Light</button>
+        <button onclick="toggleTheme()" id="theme">Cange Theme</button>
     </div>
 
     <section id="home" class="section">
@@ -41,21 +41,28 @@
     <section id="project" class="section">
         <div class="project">
             <h1>Daftar Project</h1>
-            <div class="project-card">
-                <h3>Web Portofolio</h3>
-                <button>More</button>
+            <div class="project-head">
+                <div class="project-card">
+                    <h3>Web Portofolio</h3>
+                    <button onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="des-project">Membuat Website Portofolio yang dinamis dan interaktif dengan desain yang nyaman di lihat</p>
             </div>
-            <p class="des-project active">deskripsi</p>
-            <div class="project-card">
-                <h3>Web Portofolio</h3>
-                <button>More</button>
+            <div class="project-head">
+                <div class="project-card">
+                    <h3>Web Portofolio</h3>
+                    <button onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="des-project">deskripsi</p>
             </div>
-            <p class="des-project">deskripsi</p>
-            <div class="project-card">
-                <h3>Web Portofolio</h3>
-                <button>More</button>
+            <div class="project-head">
+
+                <div class="project-card">
+                    <h3>Web Portofolio</h3>
+                    <button onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="des-project">deskripsi</p>
             </div>
-            <p class="des-project">deskripsi</p>
         </div>
     </section>
 

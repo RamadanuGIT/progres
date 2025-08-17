@@ -7,6 +7,20 @@ body {
     color: white;
 }
 
+#theme {
+  border: none;
+  background-color: #ff4655;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.dark-mode {
+    background-color: white;
+    color: black;
+}
+
 
 .navbar {
   position: sticky;
@@ -17,6 +31,10 @@ body {
   justify-content: space-evenly;
   background-color: #ff4655;
   padding: 10px;
+}
+
+.logo {
+  color: white;
 }
 
 .navbar a {
@@ -30,16 +48,8 @@ body {
   color: #ddd;
 }
 
-.navbar button {
-  justify-content: left;
-}
-
 .section .active {
   display: block;
-}
-
-button:hover {
-  color: rgb(77, 77, 255);
 }
 
 #home {
@@ -93,18 +103,25 @@ button:hover {
   font-size: larger;
 }
 
+.project-head {
+  padding: 10px;
+  border: 1px white solid;
+  border-radius: 5px;
+  margin: 10px;
+}
+
 .project-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px white solid;
   padding: 10px;
   width: 100vh;
 
 }
 
-.project p {
-  border: 1px white solid;
+.des-project {
+  display: none;
+  background-color: #313131;
   text-align: left;
 }
 

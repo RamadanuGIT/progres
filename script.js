@@ -14,12 +14,10 @@ function submitForm() {
     }
 }
 
-let body = document.querySelector('body');
-const theme = document.getElementById('theme');
-    function changeTheme() {
-        body.style.background = 'white';
-        body.style.color = 'black';
-        body.style.border = '1px black solid'
+    function toggleTheme() {
+        document.body.classList.toggle('dark-mode');
     }
 
-theme.addEventListener('click', changeTheme)
+function toggleDetail(e) {
+    doc
+}
